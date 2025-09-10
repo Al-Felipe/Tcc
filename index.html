@@ -9,17 +9,24 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pet_supplies"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li id="logo" class="hover-effect link-efeito">Logo</li>
-          <div class="mid-links">
-            <li><a href="" class="link-efeito">Ínicio</a></li>
-            <li><a href="" class="link-efeito">Planos</a></li>
-            <li><a href="" class="link-efeito">Benefícios</a></li>
-          </div>
+          <li class="logo">
+            <a href="" class="link-efeito">Logo</a>
+          </li>
+          <li class="mid-links">
+            <a href="" class="link-efeito">Ínicio</a>
+            <a href="#sobre" class="link-efeito">Sobre</a>
+            <a href="#planos" class="link-efeito">Planos</a>
+            <a href="#beneficios" class="link-efeito">Benefícios</a>
+          </li>
           <li>
             <a href="" class="login link-efeito">Login</a>
             <a href="" class="link-efeito">Cadastrar</a>
@@ -28,7 +35,7 @@
       </nav>
     </header>
 
-    <div class="hero-section">
+    <div class="hero-section" id="home">
       <div class="hero-container">
         <h1>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus
@@ -41,7 +48,22 @@
       </div>
     </div>
 
-    <div class="planos">
+    <div class="about" id="sobre">
+      <p>
+        Acreditamos que todo cão merece atenção, carinho e passeios que
+        estimulem corpo e mente. Somos apaixonados por animais e especializados
+        em proporcionar caminhadas seguras, divertidas e adaptadas à
+        personalidade de cada pet.
+      </p>
+      <p>
+        Com experiência no cuidado e bem-estar animal, oferecemos um serviço de
+        dog walker confiável, responsável e afetuoso. Cada passeio é planejado
+        com amor, respeitando o ritmo do seu cachorro e garantindo momentos de
+        alegria e exercício ao ar livre.
+      </p>
+    </div>
+
+    <div class="planos" id="planos">
       <div class="plan-container">
         <h2 class="plan-title">Conheça nossos planos</h2>
         <div class="plan-wrapper">
@@ -70,39 +92,32 @@
       </div>
     </div>
 
-    <div class="beneficios">
-      <div class="benetift-container">
-        <h2 class="benefit-title">Benefícios</h2>
-        <div>
-          <img src="" alt="" />
+    <div class="beneficios" id="beneficios">
+      <h2 class="benefit-title">Benefícios da camihada para o seu cachorro</h2>
+      <div class="benefit-container">
+        <div class="benefit-wrapper">
+          <img src="/img/1.png" alt="icon-number1" class="benefit-img" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="benefit-wrapper">
+          <img src="/img/2.png" alt="icon-number2" class="benefit-img" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="benefit-wrapper">
+          <img src="/img/3.png" alt="icon-number3" class="benefit-img" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
             quod.
           </p>
         </div>
-        <div>
-          <img src="" alt="" />
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
-            quod.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
+        <div class="benefit-wrapper">
+          <img src="/img/4.png" alt="icon-number4" class="benefit-img" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam,
             quod.
@@ -111,6 +126,32 @@
       </div>
     </div>
 
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div>
+          <p class="footer-title"><b>Fale conosco</b></p>
+          <p class="phone"><i class="fa-solid fa-phone"></i> (XX) XXXX-XXXX</p>
+          <p class="email">
+            <i class="fa-solid fa-envelope"></i> email@exemplo.com
+          </p>
+        </div>
+        <div class="social-media">
+          <p class="footer-title"><b>Nossas redes</b></p>
+          <div class="social-container">
+            <div class="circle">
+              <i class="fa-brands fa-facebook clr-white icon-size"></i>
+            </div>
+            <div class="circle">
+              <i class="fa-brands fa-instagram clr-white icon-size"></i>
+            </div>
+            <div class="circle">
+              <i class="fa-brands fa-linkedin clr-white icon-size"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="rights">© 2024 Todos os direitos reservados.</p>
+    </footer>
   </body>
 </html>
