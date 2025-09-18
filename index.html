@@ -13,18 +13,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul id="lista">
           <li class="logo">
             <a href="" class="link-efeito">Logo</a>
           </li>
           <li class="mid-links">
             <a href="" class="link-efeito">Ínicio</a>
             <a href="#sobre" class="link-efeito">Sobre</a>
-            <a href="#planos" class="link-efeito">Planos</a>
+            <a href="#depoimentos" class="link-efeito">Clientes</a>
             <a href="#beneficios" class="link-efeito">Benefícios</a>
           </li>
           <li>
@@ -64,34 +71,54 @@
           </p>
         </div>
 
-        <img src="/img/about-img.jpg" alt="" class="about-img">
+        <img src="/img/about-img.jpg" alt="" class="about-img" />
       </div>
     </div>
 
-    <div class="planos" id="planos">
-      <div class="plan-container">
-        <h2 class="plan-title">Depoimentos de Nossos Clientes</h2>
-        <div class="plan-wrapper">
-          <div class="card-plan card">
-            <img src="/img/icon.png" alt="" />
-            <p><b>Plano Básico</b></p>
-            <p>Passeios fixos 2x na semana.</p>
-            <p><b>R$ 30.00</b></p>
-            <button class="btn-buy">Comprar</button>
+    <div class="depoimentos" id="depoimentos">
+      <div class="depoimentos-container">
+        <h2 class="depoimento-title">Depoimentos de Nossos Clientes</h2>
+        <div class="depoimento-wrapper">
+          <div class="card h-200 w-200">
+            <img src="/img/joao.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Roberto Silva</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+              <p class="card-text">
+                "Minha rotina é corrida e o João garante que o Max gaste energia
+                e fique mais feliz."
+              </p>
+            </div>
           </div>
-          <div class="card-plan card">
-            <img src="/img/icon2.png" alt="" />
-            <p><b>Plano Intermediário</b></p>
-            <p>Passeios fixos 3x ou 4x na semana.</p>
-            <p><b>R$ 50.00</b></p>
-            <button class="btn-buy">Comprar</button>
+
+          <div class="card h-200 w-200">
+            <img src="/img/mariana.jpg" class="card-img-top client-photo" alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">Mariana Souza</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+              <p class="card-text">
+                "Graças ao João, o Bob ficou mais sociável e calmo no dia a
+                dia."
+              </p>
+            </div>
           </div>
-          <div class="card-plan card">
-            <img src="/img/icon3.png" alt="" />
-            <p><b>Plano Premium</b></p>
-            <p class="text-card">Passeios diários, snacks e brindes.</p>
-            <p><b>R$ 70.00</b></p>
-            <button class="btn-buy">Comprar</button>
+
+          <div class="card">
+            <img src="/img/maria.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Maria Gonçalves</h5>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+              <p class="card-text">
+                "O João é ótimo com a Mel! Ela volta sempre tranquila dos
+                passeios e até mais obediente em casa."
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -158,5 +185,11 @@
 
       <p class="rights">© 2024 Todos os direitos reservados.</p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
