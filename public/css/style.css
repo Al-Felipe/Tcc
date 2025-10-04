@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Navigation area */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+ul {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#lista {
+  margin: 0;
+}
+
+ul a {
+  color: black;
+  font-weight: bold;
+}
+
+.mid-links {
+  display: flex;
+  gap: 20px;
+}
+
+.login {
+  padding-right: 10px;
+}
+
+.link-efeito {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.link-efeito::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.link-efeito:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Hero area */
+.hero-section,
+header {
+  background-color: #f0ac03;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.hero-container h1 {
+  font-size: 30px;
+}
+
+.img-hero {
+  width: 300px;
+}
+
+/* About area */
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 100px 30px;
+  background-color: #003399;
+  color: #fff;
+  font-weight: 600;
+}
+
+.about-img {
+  width: 200px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 7px 7px 4px -2px #000000;
+}
+
+/* Depoimentos */
+.depoimentos-container {
+  background-color: #f0ac03;
+  padding: 50px;
+}
+
+.depoimento-title {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0 60px 0;
+}
+
+.depoimento-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.fa-star {
+  color: #f0ac03;
+}
+
+/* Benefit area */
+.beneficios {
+  padding: 30px;
+}
+
+.benefit-title {
+  text-align: center;
+}
+
+.benefit-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-img {
+  width: 250px;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+  background-color: #f0ac03;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 23px;
+}
+
+.rights {
+  margin: 0;
+  padding-top: 30px;
+}
+
+.social-media,
+.phone,
+.rights {
+  text-align: center;
+}
+
+.clr-white {
+  color: white;
+}
+
+.icon-size {
+  font-size: 23px;
+}
+
+.circle {
+  background-color: #003399;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.social-container {
+  display: flex;
+  gap: 15px;
+}
+
+.circle:hover {
+  background-color: #134ab8;
+  transition: 0.5s;
+}
