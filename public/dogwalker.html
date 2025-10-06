@@ -14,9 +14,71 @@
     <div id="sidebar"></div>
 
     <main class="conteudo-principal">
-      
+      <div class="dashboard-container">
+        <h2 class="dashboard-title">Dashboard do Dogwalker</h2>
+
+        <div class="stats-grid">
+          <!-- Card 1 -->
+          <div class="stat-card">
+            <h3>Passeios Hoje</h3>
+            <p>3</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="stat-card">
+            <h3>Passeios na Semana</h3>
+            <p>12</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="stat-card">
+            <h3>Ganhos no Mês</h3>
+            <p>R$ 540</p>
+          </div>
+
+          <!-- Card 4 (ocupa toda a linha) -->
+          <div class="next-walks">
+            <h3>Próximos Passeios</h3>
+            <table class="walks-table">
+              <thead>
+                <tr>
+                  <th>Data</th>
+                  <th>Hora</th>
+                  <th>Cliente</th>
+                  <th>Endereço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>04/10/2025</td>
+                  <td>10:00</td>
+                  <td>João Silva</td>
+                  <td>Rua das Flores, 120</td>
+                </tr>
+                <tr>
+                  <td>04/10/2025</td>
+                  <td>14:00</td>
+                  <td>Maria Souza</td>
+                  <td>Av. Brasil, 450</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="/js/sidebar.js"></script>
+    <script>
+      document.getElementById("passeios-hoje").textContent = "3";
+      document.getElementById("passeios-semana").textContent = "12";
+      document.getElementById("ganho-mes").textContent = "R$ 450,00";
+
+      const tabela = document.getElementById("tabela-passeios");
+      tabela.innerHTML = `
+    <tr><td>04/10/2025</td><td>09:00</td><td>Praça Central</td></tr>
+    <tr><td>04/10/2025</td><td>15:00</td><td>Parque dos Cães</td></tr>
+  `;
+    </script>
   </body>
 </html>
