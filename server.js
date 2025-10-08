@@ -156,31 +156,6 @@ server.get("/logout", (req, res) => {
   });
 });
 
-// Listar consultas
-// nao ta pronto
-server.get("/clientes", async (req, res) => {
-  try {
-    const sql = `
-      SELECT 
-          c.id_consulta,
-          c.data_consulta,
-          p.nome AS paciente_nome,
-          p.telefone,
-          p.email,
-          COALESCE(m.nome, 'Aguardando médico') AS medico_nome
-      FROM consulta c
-      JOIN paciente p ON c.id_paciente = p.id_paciente
-      LEFT JOIN medico m ON c.id_medico = m.id_medico
-      ORDER BY c.data_consulta ASC
-    `;
-    const [consultas] = await conexaoDB.execute(sql);
-    res.json(consultas);
-  } catch (err) {
-    console.error("Erro ao buscar consultas:", err);
-    res.status(500).json({ error: "Erro ao buscar consultas" });
-  }
-});
-
 server.listen(port, () => {
   console.log(`Servidor rodando na porta ${port}`);
 });
