@@ -1,38 +1,80 @@
-.clientes-table {
-  width: 100%;
-  max-width: 800px;
-  border-collapse: collapse;
-  font-family: "Montserrat", sans-serif;
-  background: #fff;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  height: 200px;
-  margin: 0 auto;
+/* Importação da fonte e variáveis CSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Variáveis de cor */
+:root {
+  --azul-escuro: #003399;
+  --amarelo: #f0ac03;
+  --preto: #000;
+  --branco: #fff;
 }
 
-.clientes-table thead {
-  background-color: #1b5fb1;
-  color: #fff;
-  text-align: left;
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.clientes-table th, 
-.clientes-table td {
-  padding: 8px 12px;
-  font-size: 14px;
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  min-height: 100vh;
+  color: var(--preto);
 }
 
+/* Wrapper da tabela */
 .table-wrapper {
   flex: 1;
   display: flex;
-  justify-content: center; 
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+  margin-left: 220px;
+  margin-top: 80px;
 }
 
-.row {
-    background-color: #98b4d5;
+/* Estilo da tabela */
+.clientes-table {
+  width: 80%;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--branco);
 }
 
-.border {
-    border: 1px solid black;
+/* Cabeçalho da tabela */
+.clientes-table th {
+  background-color: var(--azul-escuro);
+  color: var(--branco);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px;
+  border-bottom: 2px solid var(--amarelo);
+}
+
+/* Linhas da tabela */
+.clientes-table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Cor alternada nas linhas */
+.clientes-table tr:nth-child(even) {
+  background-color: #f8f9ff;
+}
+
+/* Efeito hover */
+.clientes-table tr:hover {
+  background-color: var(--amarelo);
+  color: var(--preto);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Borda inferior destacada */
+.clientes-table tr:last-child td {
+  border-bottom: none;
 }

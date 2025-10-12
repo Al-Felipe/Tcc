@@ -133,7 +133,7 @@ server.post("/login", async (req, res) => {
 
     // Redireciona conforme o tipo
     if (usuario.tipo_usuario === "dogwalker") {
-      return res.redirect("/dogwalker.html");
+      return res.redirect("/dogwalker/dogwalkerinicio.html");
     } else {
       return res.redirect("/home.html");
     }

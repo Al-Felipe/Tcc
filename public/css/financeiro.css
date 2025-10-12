@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 220px;
+  padding: 90px 40px 40px;
+  width: calc(100% - 220px);
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #003580;
+}
+
+/* Cards resumo */
+.summary-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  flex: 1 1 280px;
+  border-radius: 16px;
+  padding: 30px 35px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  color: #003580;
+}
+
+.card-header h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.card-header i {
+  font-size: 1.8rem;
+  color: #ffd500;
+}
+
+.card .value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.card .subtitle {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Cards específicos */
+.card.income {
+  border-left: 6px solid #28a745;
+}
+
+.card.expenses {
+  border-left: 6px solid #dc3545;
+}
+
+.card.balance {
+  border-left: 6px solid #004aad;
+}
+
+/* Filtro */
+.filter-section {
+  margin-bottom: 35px;
+  font-weight: 600;
+  color: #003580;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter-section label {
+  font-size: 1.1rem;
+}
+
+.filter-section input[type="month"] {
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1.8px solid #cbd5e1;
+  transition: border-color 0.3s ease;
+  width: 160px;
+}
+
+.filter-section input[type="month"]:focus {
+  outline: none;
+  border-color: #ffd500;
+  box-shadow: 0 0 8px #ffd500;
+}
+
+/* Tabela de transações */
+.transactions-table {
+  overflow-x: auto;
+}
+
+.transactions-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+  font-weight: 500;
+  font-size: 1rem;
+  min-width: 720px;
+}
+
+.transactions-table thead tr {
+  background: transparent;
+}
+
+.transactions-table th {
+  text-align: left;
+  color: #6b7280;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.transactions-table tbody tr {
+  background: white;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.07);
+  border-radius: 12px;
+  transition: background-color 0.25s ease;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #fef9e7;
+}
+
+.transactions-table td {
+  padding: 16px 16px;
+  vertical-align: middle;
+  border: none;
+}
+
+.transactions-table .income {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.transactions-table .expense {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+/* Scroll horizontal customizado */
+.transactions-table::-webkit-scrollbar {
+  height: 8px;
+}
+
+.transactions-table::-webkit-scrollbar-thumb {
+  background-color: #004aad;
+  border-radius: 4px;
+}
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .summary-cards {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 90px 20px 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  .sidebar {
+    width: 60px;
+    padding-top: 70px;
+  }
+
+  .sidebar ul li a span {
+    display: none;
+  }
+
+  .topbar {
+    left: 60px;
+    padding: 0 15px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+    padding: 90px 15px 20px;
+  }
+
+  .transactions-table table {
+    min-width: 500px;
+  }
+}
+
+
+

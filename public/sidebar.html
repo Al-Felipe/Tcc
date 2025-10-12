@@ -4,25 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SideBar</title>
-    <link rel="stylesheet" href="/css/sidebardogwalker.css">
+    <link rel="stylesheet" href="/css/sidebardogwalker.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <aside class="sidebar">
-      <div class="perfil">
-        <img src="/img/profile.png" alt="Foto de perfil" />
+    <header class="topbar">
+      <div class="logo">Dog Walker</div>
+      <div class="user-profile">
+        <i class="fas fa-user-circle"></i>
+        <span>Olá, Admin</span>
       </div>
-      <nav class="menu-lateral">
-        <ul>
-          <li><a href="dogwalker.html">Início</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="clientes.html">Clientes</a></li>
-          <li><a href="relatorio.html">Relatório</a></li>
-        </ul>
-      </nav>
-      <div class="configuracoes">
-        <a href="config.html">Configurações</a>
-        <a href="/logout">Sair</a>
-      </div>
-    </aside>
+    </header>
+
+    <!-- Sidebar fixa -->
+    <nav class="sidebar">
+      <ul>
+        <div>
+          <li>
+            <a href="dogwalkerinicio.html"
+              ><i class="fas fa-home"></i><span>Início</span></a
+            >
+          </li>
+          <li>
+            <a href="agenda.html"
+              ><i class="fas fa-calendar-check"></i><span>Agenda</span></a
+            >
+          </li>
+
+          <li>
+            <a href="clientes.html"
+              ><i class="fas fa-users"></i><span>Clientes</span></a
+            >
+          </li>
+
+          <li>
+            <a href="financeiro.html" class="active"
+              ><i class="fas fa-dollar-sign"></i><span>Financeiro</span></a
+            >
+          </li>
+        </div>
+        <div>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i><span>Configurações</span></a>
+          </li>
+          <li>
+            <a href="config.html"><i class="fas fa-sign-out-alt"></i><span>Sair</span></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
   </body>
 </html>

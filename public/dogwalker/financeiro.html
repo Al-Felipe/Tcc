@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/financeiro.css">
+  </head>
+  <body>
+    <div id="sidebar"></div>
+
+    <main class="main-content">
+      <h1>Painel Financeiro</h1>
+
+      <section class="summary-cards">
+        <div class="card income">
+          <div class="card-header">
+            <h2>Receitas</h2>
+            <i class="fas fa-arrow-up"></i>
+          </div>
+          <p class="value">R$ 8.750,00</p>
+          <p class="subtitle">Último mês</p>
+        </div>
+
+        <div class="card expenses">
+          <div class="card-header">
+            <h2>Despesas</h2>
+            <i class="fas fa-arrow-down"></i>
+          </div>
+          <p class="value">R$ 3.200,00</p>
+          <p class="subtitle">Último mês</p>
+        </div>
+
+        <div class="card balance">
+          <div class="card-header">
+            <h2>Saldo</h2>
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <p class="value">R$ 5.550,00</p>
+          <p class="subtitle">Saldo atual</p>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <label for="date-filter">Filtrar por data:</label>
+        <input type="month" id="date-filter" name="date-filter" />
+      </section>
+
+      <section class="transactions-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Descrição</th>
+              <th>Categoria</th>
+              <th>Tipo</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/10/2025</td>
+              <td>Caminhada com Rex</td>
+              <td>Serviço</td>
+              <td class="income">Entrada</td>
+              <td class="income">R$ 80,00</td>
+            </tr>
+            <tr>
+              <td>02/10/2025</td>
+              <td>Compra de ração</td>
+              <td>Despesa</td>
+              <td class="expense">Saída</td>
+              <td class="expense">R$ 120,00</td>
+            </tr>
+            <tr>
+              <td>03/10/2025</td>
+              <td>Caminhada com Mel</td>
+              <td>Serviço</td>
+              <td class="income">Entrada</td>
+              <td class="income">R$ 90,00</td>
+            </tr>
+            <tr>
+              <td>05/10/2025</td>
+              <td>Pagamento do app</td>
+              <td>Despesa</td>
+              <td class="expense">Saída</td>
+              <td class="expense">R$ 50,00</td>
+            </tr>
+            <tr>
+              <td>06/10/2025</td>
+              <td>Caminhada com Thor</td>
+              <td>Serviço</td>
+              <td class="income">Entrada</td>
+              <td class="income">R$ 85,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="/js/sidebar.js"></script>
+  </body>
+</html>
